@@ -9,3 +9,11 @@ vehicles = [
 ]
 
 count_occurrences(vehicles)
+
+puts "==============Option 2==============="
+## option 2
+def count_occurrences1(vehicles)
+  vehicles.tally.each { |k, v| puts "#{k} => #{v}" }
+end
+
+count_occurrences1(vehicles)
