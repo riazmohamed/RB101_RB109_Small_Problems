@@ -3,9 +3,12 @@
 
 # Teddy is 69 years old!
 
-def teddy_age
+def teddy_age(name="Teddy")
   age = rand(20..200)
-  puts "Teddy is #{age} years old!"
+  puts "#{name} is #{age} years old!"
 end
 
-teddy_age
+puts "Please enter the name. => "
+answer = gets.chomp
+
+answer == "" ? teddy_age : teddy_age(answer)
